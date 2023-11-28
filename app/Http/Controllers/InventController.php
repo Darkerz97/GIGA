@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 class InventController extends Controller
 {
     
-    public function store ()
+    public function store (Request $request)
     {
-        return 'procesando formulario';
+        return $request;
     }
 
 
