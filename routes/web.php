@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::view('/Invent','applicacion.Inventario')->name('Invent');
+Route::post('Invent','App\Http\Controllers\InventController@store');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -24,3 +28,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
