@@ -36,7 +36,7 @@ return new class extends Migration
             $table->string('comentarios');
             $table->timestamp('fecha de salida');
             $table->integer('horas invertidas');
-            $table->string('ubicacion') ('char');
+            $table->string('ubicacion');
             $table->timestamp('fecha de diagnostico');
             $table->string('reporte');
         });
